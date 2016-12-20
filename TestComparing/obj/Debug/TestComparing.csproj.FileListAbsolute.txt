@@ -1,0 +1,12 @@
+E:\Learning C#\TestComparing\TestComparing\bin\Debug\TestComparing.exe.config
+E:\Learning C#\TestComparing\TestComparing\bin\Debug\TestComparing.exe
+E:\Learning C#\TestComparing\TestComparing\bin\Debug\TestComparing.pdb
+E:\Learning C#\TestComparing\TestComparing\obj\Debug\TestComparing.csprojResolveAssemblyReference.cache
+E:\Learning C#\TestComparing\TestComparing\obj\Debug\TestComparing.exe
+E:\Learning C#\TestComparing\TestComparing\obj\Debug\TestComparing.pdb
+D:\Learning c#\TestComparing\TestComparing\bin\Debug\TestComparing.exe.config
+D:\Learning c#\TestComparing\TestComparing\obj\Debug\TestComparing.exe
+D:\Learning c#\TestComparing\TestComparing\obj\Debug\TestComparing.pdb
+D:\Learning c#\TestComparing\TestComparing\bin\Debug\TestComparing.exe
+D:\Learning c#\TestComparing\TestComparing\bin\Debug\TestComparing.pdb
+D:\Learning c#\TestComparing\TestComparing\obj\Debug\TestComparing.csprojResolveAssemblyReference.cache
