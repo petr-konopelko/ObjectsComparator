@@ -11,8 +11,8 @@ namespace TestComparing
 {
     class ComparingObjects
     {
-        private StringBuilder builder = new StringBuilder();
-        
+        private StringBuilder _builder = new StringBuilder();
+
         /// <summary>
         /// Method for comparing two the same objects, returns null if they are equal or difference between objects
         /// </summary>
@@ -21,29 +21,10 @@ namespace TestComparing
         /// <returns>null if objects are equal and string diffrence if they are not equal</returns>
         public String GetDifferenceBetweenObjects(object expected, object actual)
         {
-            if(expected == null && actual == null)
-            {
-                return null;
-            }
-            else if(expected == null || actual == null)
-            {
-                if(expected == null)
-                {
-                    return "Expected object was null";
-                }
-                else
-                {
-                    return "Actual object was null";
-                }
-            }
-            else
-            {
-                Type expectedType = expected.GetType();
-                CompareObjects(expected, actual, expectedType.Name);
-                String diffrence = builder.ToString();
-                builder.Clear();
-                return diffrence;
-            }
+            CompareObjects(expected, actual, "base");
+            String diffrence = _builder.ToString();
+            _builder.Clear();
+            return diffrence;
         }
 
         private void CompareClassObjects(object expected, object actual)
@@ -86,7 +67,7 @@ namespace TestComparing
             }
             else
             {
-                builder.AppendLine($"Count for object {expected.GetType().Name} aren't equal");
+                _builder.AppendLine($"Count for object {expected.GetType().Name} aren't equal");
             }
         }
 
@@ -100,11 +81,11 @@ namespace TestComparing
             {
                 if (expected == null)
                 {
-                   builder.AppendLine($"Expected object {fullName} was null");
+                    _builder.AppendLine($"Expected object {fullName} was null");
                 }
                 else
                 {
-                    builder.AppendLine($"Actual object {fullName} was null");
+                    _builder.AppendLine($"Actual object {fullName} was null");
                 }
             }
             else
@@ -138,7 +119,7 @@ namespace TestComparing
         {
             if (expected.ToString() != actual.ToString())
             {
-                builder.AppendLine($"Values for {fieldName} are not equal. Expected {expected}, actual: {actual}");
+                _builder.AppendLine($"Values for {fieldName} are not equal. Expected {expected}, actual: {actual}");
             }
         }
     }
